@@ -1,0 +1,152 @@
+.history-section {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.history-section h2 {
+    margin-bottom: 20px;
+}
+
+.history-item {
+    border-left: 4px solid #1f2937;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #f4f6f8;
+    border-radius: 6px;
+}
+
+.history-item h3 {
+    margin-bottom: 10px;
+}
+
+.history-item p {
+    margin-bottom: 6px;
+}
+
+.history-item pre {
+    margin-top: 15px;
+    padding: 15px;
+    background: #111827;
+    color: white;
+    overflow-x: auto;
+    border-radius: 6px;
+}
+
+details {
+    margin-top: 10px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+.resource-history {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+}
+
+.history-item {
+    background: #f4f6f8;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+.history-item p {
+    margin-bottom: 6px;
+}
+
+.history-item pre {
+    margin-top: 10px;
+    padding: 12px;
+    background: #111827;
+    color: white;
+    overflow-x: auto;
+    border-radius: 6px;
+}
+
+.ai-answer {
+    background: #f4f6f8;
+    padding: 18px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.ai-answer h3 {
+    margin-bottom: 10px;
+}
+
+.sources h3 {
+    margin-bottom: 10px;
+}
+
+.source-card {
+    background: #f4f6f8;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.source-card p {
+    margin-bottom: 6px;
+}
+
+.source-card pre {
+    margin-top: 10px;
+    padding: 12px;
+    background: #111827;
+    color: white;
+    overflow-x: auto;
+    border-radius: 6px;
+    white-space: pre-wrap;
+}
+
+/* ---------------------------------------------------------
+   Terraform ↔ Azure Comparison
+--------------------------------------------------------- */
+
+.comparison-section {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.comparison-section h2 {
+    margin-bottom: 10px;
+}
+
+.section-description {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.comparison-item {
+    border: 1px solid #ddd;
+    padding: 18px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.comparison-item h3 {
+    margin-bottom: 10px;
+}
+
+.comparison-status {
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.comparison-details {
+    background: #f4f6f8;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.comparison-details p {
+    margin-bottom: 6px;
+}

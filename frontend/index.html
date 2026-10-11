@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfraTrace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>InfraTrace</h1>
+    <p>Cloud Infrastructure History & Context Platform</p>
+</header>
+
+<main>
+
+
+<!-- Dashboard Stats -->
+<section class="stats">
+
+    <div class="card">
+        <h3>Infrastructure Resources</h3>
+        <p id="resource-count">Loading...</p>
+    </div>
+
+    <div class="card">
+        <h3>Provider</h3>
+        <p id="provider">Loading...</p>
+    </div>
+
+    <div class="card">
+        <h3>Azure Resources</h3>
+        <p id="azure-count">Loading...</p>
+
+        <button onclick="toggleAzureResources()">
+            View Azure Resources
+        </button>
+    </div>
+    
+</section>
+<section
+    id="azure-details-section"
+    class="resources"
+    style="display: none;"
+>
+    <h2>Azure Resource Details</h2>
+
+    <div id="azure-resource-list">
+        Loading Azure resources...
+    </div>
+</section>
+
+
+<!-- Infrastructure Resources -->
+<section class="resources">
+
+    <h2>Infrastructure Resources</h2>
+
+    <div id="resource-list">
+        Loading resources...
+    </div>
+
+</section>
+
+
+<!-- Terraform vs Azure -->
+<section class="comparison-section">
+
+    <h2>Terraform ↔ Azure Comparison</h2>
+
+    <p class="section-description">
+        Compare infrastructure defined in Terraform
+        with resources currently discovered in Azure.
+    </p>
+
+
+    <!-- Comparison Summary -->
+
+    <div class="comparison-summary">
+
+        <div class="summary-card">
+            <h4>Terraform</h4>
+            <p id="terraform-total">-</p>
+        </div>
+
+        <div class="summary-card">
+            <h4>Azure</h4>
+            <p id="azure-total">-</p>
+        </div>
+
+        <div class="summary-card">
+            <h4>Matched</h4>
+            <p id="matched-total">-</p>
+        </div>
+
+        <div class="summary-card">
+            <h4>Missing in Azure</h4>
+            <p id="missing-total">-</p>
+        </div>
+
+        <div class="summary-card">
+            <h4>Azure Only</h4>
+            <p id="azure-only-total">-</p>
+        </div>
+
+    </div>
+
+
+    <!-- Detailed Comparison -->
+
+    <div id="comparison-list">
+        Loading comparison...
+    </div>
+
+</section>
+
+
+<!-- Ask InfraTrace -->
+
+<section class="ask-section">
+
+    <h2>Ask InfraTrace</h2>
+
+    <input
+        type="text"
+        id="question"
+        placeholder="Ask about your infrastructure..."
+    >
+
+    <button onclick="askQuestion()">
+        Ask
+    </button>
+
+    <div id="answer"></div>
+
+</section>
+
+
+</main>
+
+<script src="app.js"></script>
+
+</body>
+</html>
